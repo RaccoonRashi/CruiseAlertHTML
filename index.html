@@ -1,170 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CruiseAlert</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+    <title>CruiseAlert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-light-blue w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-     <a href="#MYPROFILE" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY PROFILE</a>
-      <a href="#CONTACT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="#ABOUT US" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
-    <a href="#SETTINGS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SETTINGS</a>
- 
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">CruiseAlert</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#MYPROFILE">MY PROFILE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#CONTACT">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ABOUTUS">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="#SETTINGS">SETTINGS</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MORE
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Merchandise</a>
+                    <a class="dropdown-item" href="#">Extras</a>
+                    <a class="dropdown-item" href="#">Media</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-<a href="ABOUTUS.html">ABOUT US</a>
-<a href="MYPROFILE.html">MY PROFILE</a>
-<a href="CONTACT.html">CONTACT US</a>
-</div>
+</nav>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/logo_cruisealert.svg" style="width:50%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>CruiseAlertLogo</h3>
+<div class="container mt-5 pt-5">
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides text-center">
+        <img src="images/logo_cruisealert.svg" class="img-fluid" style="width:50%">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>CruiseAlertLogo</h3>
+        </div>
     </div>
-  </div>
 
-</html>
-
-  <!DOCTYPE HTML>
-  
-  
-  </html>
-  <!-- The About Us Section -->
-  <!DOCTYPE html>
-  <div class="w3-container w3-pale-yellow">
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="ABOUT US">
-    <h2 class="w3-wide">ABOUT US</h2>
-    <p class="w3-opacity"><i>Our engineers</i></p>
-    <p class="w3-justify">A group of young engineers brainstormed what solutions could be created for a problem. The issue was, what problem could THEY, solve? The world is so big, and the scale of the issues to solutions is enormous.. just the thought made us tired. And that was it! By creating a code and real-time detection system, we could catch drivers' drowsiness and send them alerts to help prevent a crash. Through months of code, troubleshooting, and trials, we've created a hopefully revolutionary product to bring you a better road.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Abhiraj V.</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Abhiraj V." style="width:60%">
-      </div>
-<div class="w3-third">
-        <p>Rashi B.</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Rashi B." style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Ram B.</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Ram B." style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Derek K</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Derek K" style="width:60%">   
-      </div>
-    </div>
-  </div>
-</html>
-  <!-- The Contact Section -->
-  <!DOCTYPE html>
- <div class="w3-light-blue" id="CONTACT">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">CONTACT</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> PHOENIX, AZ<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +-------<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <!-- The About Us Section -->
+    <div class="container bg-warning text-dark py-5" id="ABOUTUS">
+        <h2 class="text-center">ABOUT US</h2>
+        <p class="text-center"><i>Our engineers</i></p>
+        <p class="text-justify">A group of young engineers brainstormed what solutions could be created for a problem. The issue was, what problem could THEY, solve? The world is so big, and the scale of the issues to solutions is enormous.. just the thought made us tired. And that was it! By creating a code and real-time detection system, we could catch drivers' drowsiness and send them alerts to help prevent a crash. Through months of code, troubleshooting, and trials, we've created a hopefully revolutionary product to bring you a better road.</p>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <p>Abhiraj V.</p>
+                <img src="/w3images/bandmember.jpg" class="rounded-circle mb-3" alt="Abhiraj V." style="width:60%">
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <div class="col-md-3 text-center">
+                <p>Rashi B.</p>
+                <img src="/w3images/bandmember.jpg" class="rounded-circle mb-3" alt="Rashi B." style="width:60%">
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+            <div class="col-md-3 text-center">
+                <p>Ram B.</p>
+                <img src="/w3images/bandmember.jpg" class="rounded-circle mb-3" alt="Ram B." style="width:60%">
+            </div>
+            <div class="col-md-3 text-center">
+                <p>Derek K</p>
+                <img src="/w3images/bandmember.jpg" class="rounded-circle mb-3" alt="Derek K" style="width:60%">
+            </div>
+        </div>
     </div>
-  </div>
-  </html>
-<!-- End Page Content -->
+
+    <!-- The Contact Section -->
+    <div class="container bg-light py-5" id="CONTACT">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <p><i class="fa fa-map-marker" style="width:30px"></i> PHOENIX, AZ</p>
+                <p><i class="fa fa-phone" style="width:30px"></i> Phone: +-------</p>
+                <p><i class="fa fa-envelope" style="width:30px"></i> Email: mail@mail.com</p>
+            </div>
+            <div class="col-md-6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Message" required name="Message">
+                    </div>
+                    <button type="submit" class="btn btn-dark">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+<img src="/w3images/map.jpg" class="img-fluid w-100">
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="container-fluid bg-light text-center py-4">
+    <div class="social-icons">
+        <a href="#" class="fa fa-facebook-official"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-snapchat"></a>
+        <a href="#" class="fa fa-pinterest-p"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    <p class="mt-3">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else { 
+        x.className = x.className.replace(" show", "");
+    }
 }
 </script>
 
